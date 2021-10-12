@@ -170,7 +170,7 @@ stateResult_t rvWeaponMachinegun::State_Idle( const stateParms_t& parms ) {
 	switch ( parms.stage ) {
 		case STAGE_INIT:
 			if ( !AmmoAvailable ( ) ) {
-				SetStatus ( WP_OUTOFAMMO );
+				SetStatus ( WP_OUTOFAMMO ); //SetStatus ( WP_OUTOFAMMO ); -noahedit
 			} else {
 				SetStatus ( WP_READY );
 			}
@@ -228,11 +228,11 @@ stateResult_t rvWeaponMachinegun::State_Fire ( const stateParms_t& parms ) {
 		case STAGE_INIT:
 			if ( wsfl.zoom ) {
 				nextAttackTime = gameLocal.time + (altFireRate * owner->PowerUpModifier ( PMOD_FIRERATE ));
-				Attack ( true, 1, spreadZoom, 0, 1.0f );
+				Attack ( true, 10, 5, 0, 50.0f ); //( true, 1, spreadZoom, 0, 1.0f ) -noahedit
 				fireHeld = true;
 			} else {
 				nextAttackTime = gameLocal.time + (fireRate * owner->PowerUpModifier ( PMOD_FIRERATE ));
-				Attack ( false, 1, spread, 0, 1.0f );
+				Attack ( false, 20, 10, 0, 10.0f ); //( false, 1, spread, 0, 1.0f ) -noahedit
 			}
 			PlayAnim ( ANIMCHANNEL_ALL, "fire", 0 );	
 			return SRESULT_STAGE ( STAGE_WAIT );

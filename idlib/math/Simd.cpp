@@ -386,7 +386,7 @@ void TestAdd( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Add( float + float[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -411,7 +411,7 @@ void TestAdd( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Add( float[] + float[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -460,7 +460,7 @@ void TestSub( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Sub( float + float[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -485,7 +485,7 @@ void TestSub( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Sub( float[] + float[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -534,7 +534,7 @@ void TestMul( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Mul( float * float[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 
@@ -560,7 +560,7 @@ void TestMul( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Mul( float[] * float[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -612,7 +612,7 @@ void TestDiv( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Div( float * float[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 
@@ -638,7 +638,7 @@ void TestDiv( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Div( float[] * float[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -693,7 +693,7 @@ void TestMulAdd( void ) {
 				break;
 			}
 		}
-		result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+		result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MulAdd( float * float[%2d] ) %s", j, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 }
@@ -749,7 +749,7 @@ void TestMulSub( void ) {
 				break;
 			}
 		}
-		result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+		result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MulSub( float * float[%2d] ) %s", j, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 }
@@ -813,7 +813,7 @@ void TestDot( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Dot( idVec3 * idVec3[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 
@@ -839,7 +839,7 @@ void TestDot( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Dot( idVec3 * idPlane[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 
@@ -865,7 +865,7 @@ void TestDot( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Dot( idVec3 * idDrawVert[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 
@@ -891,7 +891,7 @@ void TestDot( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Dot( idPlane * idVec3[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 
@@ -917,7 +917,7 @@ void TestDot( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Dot( idPlane * idPlane[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 
@@ -943,7 +943,7 @@ void TestDot( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Dot( idPlane * idDrawVert[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 
@@ -969,7 +969,7 @@ void TestDot( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Dot( idVec3[] * idVec3[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 
@@ -994,7 +994,7 @@ void TestDot( void ) {
 			StopRecordTime( end );
 			GetBest( start, end, bestClocksSIMD );
 		}
-		result = idMath::Fabs( dot1 - dot2 ) < 1e-4f ? "ok" : S_COLOR_RED"X";
+		result = idMath::Fabs( dot1 - dot2 ) < 1e-4f ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->Dot( float[%2d] * float[%2d] ) %s", j, j, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 }
@@ -1042,7 +1042,7 @@ void TestCompare( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->CmpGT( float[] >= float ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -1069,7 +1069,7 @@ void TestCompare( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->CmpGT( 2, float[] >= float ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	// ======================
@@ -1096,7 +1096,7 @@ void TestCompare( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->CmpGE( float[] >= float ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -1123,7 +1123,7 @@ void TestCompare( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->CmpGE( 2, float[] >= float ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	// ======================
@@ -1150,7 +1150,7 @@ void TestCompare( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->CmpLT( float[] >= float ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -1177,7 +1177,7 @@ void TestCompare( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->CmpLT( 2, float[] >= float ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	// ======================
@@ -1204,7 +1204,7 @@ void TestCompare( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->CmpLE( float[] >= float ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -1231,7 +1231,7 @@ void TestCompare( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->CmpLE( 2, float[] >= float ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -1287,7 +1287,7 @@ void TestMinMax( void ) {
 		GetBest( start, end, bestClocksSIMD );
 	}
 
-	result = ( min == min2 && max == max2 ) ? "ok" : S_COLOR_RED"X";
+	result = ( min == min2 && max == max2 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->MinMax( float[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -1307,7 +1307,7 @@ void TestMinMax( void ) {
 		GetBest( start, end, bestClocksSIMD );
 	}
 
-	result = ( v2min == v2min2 && v2max == v2max2 ) ? "ok" : S_COLOR_RED"X";
+	result = ( v2min == v2min2 && v2max == v2max2 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->MinMax( idVec2[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -1327,7 +1327,7 @@ void TestMinMax( void ) {
 		GetBest( start, end, bestClocksSIMD );
 	}
 
-	result = ( vmin == vmin2 && vmax == vmax2 ) ? "ok" : S_COLOR_RED"X";
+	result = ( vmin == vmin2 && vmax == vmax2 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->MinMax( idVec3[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -1347,7 +1347,7 @@ void TestMinMax( void ) {
 		GetBest( start, end, bestClocksSIMD );
 	}
 
-	result = ( vmin == vmin2 && vmax == vmax2 ) ? "ok" : S_COLOR_RED"X";
+	result = ( vmin == vmin2 && vmax == vmax2 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->MinMax( idDrawVert[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -1367,7 +1367,7 @@ void TestMinMax( void ) {
 		GetBest( start, end, bestClocksSIMD );
 	}
 
-	result = ( vmin == vmin2 && vmax == vmax2 ) ? "ok" : S_COLOR_RED"X";
+	result = ( vmin == vmin2 && vmax == vmax2 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->MinMax( idDrawVert[], indexes[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -1414,7 +1414,7 @@ void TestClamp( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->Clamp( float[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 
@@ -1440,7 +1440,7 @@ void TestClamp( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->ClampMin( float[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 
@@ -1466,7 +1466,7 @@ void TestClamp( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->ClampMax( float[] ) %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -1491,7 +1491,7 @@ void TestMemcpy( void ) {
 		p_simd->Memcpy( test1, test0, 8192 );
 		for ( j = 0; j < i; j++ ) {
 			if ( test1[j] != test0[j] ) {
-				idLib::common->Printf( "   simd->Memcpy() "S_COLOR_RED"X\n" );
+				idLib::common->Printf( "   simd->Memcpy() " S_COLOR_RED "X\n" );
 				return;
 			}
 		}
@@ -1517,7 +1517,7 @@ void TestMemset( void ) {
 			p_simd->Memset( test, j, i );
 			for ( k = 0; k < i; k++ ) {
 				if ( test[k] != (byte)j ) {
-					idLib::common->Printf( "   simd->Memset() "S_COLOR_RED"X\n" );
+					idLib::common->Printf( "   simd->Memset() " S_COLOR_RED "X\n" );
 					return;
 				}
 			}
@@ -1575,7 +1575,7 @@ void TestMatXMultiplyVecX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_MultiplyVecX %dx%d*%dx1 %s", i, i, i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 
@@ -1605,7 +1605,7 @@ void TestMatXMultiplyVecX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_MultiplyVecX %dx6*6x1 %s", i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 
@@ -1634,7 +1634,7 @@ void TestMatXMultiplyVecX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_MultiplyVecX 6x%d*%dx1 %s", i, i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 }
@@ -1686,7 +1686,7 @@ void TestMatXMultiplyAddVecX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_MultiplyAddVecX %dx%d*%dx1 %s", i, i, i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 
@@ -1716,7 +1716,7 @@ void TestMatXMultiplyAddVecX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_MultiplyAddVecX %dx6*6x1 %s", i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 
@@ -1746,7 +1746,7 @@ void TestMatXMultiplyAddVecX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_MultiplyAddVecX 6x%d*%dx1 %s", i, i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 }
@@ -1798,7 +1798,7 @@ void TestMatXTransposeMultiplyVecX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_TransposeMulVecX %dx6*%dx1 %s", i, i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 
@@ -1828,7 +1828,7 @@ void TestMatXTransposeMultiplyVecX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_TransposeMulVecX 6x%d*6x1 %s", i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 }
@@ -1880,7 +1880,7 @@ void TestMatXTransposeMultiplyAddVecX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_TransposeMulAddVecX %dx6*%dx1 %s", i, i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 
@@ -1910,7 +1910,7 @@ void TestMatXTransposeMultiplyAddVecX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_TransposeMulAddVecX 6x%d*6x1 %s", i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 }
@@ -1956,7 +1956,7 @@ void TestMatXMultiplyMatX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_MultiplyMatX %dx%d*%dx6 %s", i, i, i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 
@@ -1987,7 +1987,7 @@ void TestMatXMultiplyMatX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_MultiplyMatX 6x%d*%dx6 %s", i, i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 
@@ -2018,7 +2018,7 @@ void TestMatXMultiplyMatX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_MultiplyMatX %dx6*6x%d %s", i, i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 
@@ -2049,7 +2049,7 @@ void TestMatXMultiplyMatX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_MultiplyMatX 6x6*6x%d %s", i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 }
@@ -2092,7 +2092,7 @@ void TestMatXTransposeMultiplyMatX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_TransMultiplyMatX %dx6*%dx%d %s", i, i, i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 
@@ -2123,7 +2123,7 @@ void TestMatXTransposeMultiplyMatX( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = dst.Compare( tst, MATX_MATX_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = dst.Compare( tst, MATX_MATX_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_TransMultiplyMatX 6x%d*6x6 %s", i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 }
@@ -2173,7 +2173,7 @@ void TestMatXLowerTriangularSolve( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = x.Compare( tst, MATX_LTS_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = x.Compare( tst, MATX_LTS_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_LowerTriangularSolve %dx%d %s", i, i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 }
@@ -2220,7 +2220,7 @@ void TestMatXLowerTriangularSolveTranspose( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = x.Compare( tst, MATX_LTS_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = x.Compare( tst, MATX_LTS_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_LowerTriangularSolveT %dx%d %s", i, i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 }
@@ -2270,7 +2270,7 @@ void TestMatXLDLTFactor( void ) {
 			GetBest( start, end, bestClocksSIMD );
 		}
 
-		result = mat1.Compare( mat2, MATX_LDLT_SIMD_EPSILON ) && invDiag1.Compare( invDiag2, MATX_LDLT_SIMD_EPSILON ) ? "ok" : S_COLOR_RED"X";
+		result = mat1.Compare( mat2, MATX_LDLT_SIMD_EPSILON ) && invDiag1.Compare( invDiag2, MATX_LDLT_SIMD_EPSILON ) ? "ok" :  S_COLOR_RED "X";
 		PrintClocks( va( "   simd->MatX_LDLTFactor %dx%d %s", i, i, result ), 1, bestClocksSIMD, bestClocksGeneric );
 	}
 }
@@ -2345,7 +2345,7 @@ void TestBlendJoints( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->BlendJoints() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -2397,7 +2397,7 @@ void TestConvertJointQuatsToJointMats( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->ConvertJointQuatsToJointMats() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -2454,7 +2454,7 @@ void TestConvertJointMatsToJointQuats( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->ConvertJointMatsToJointQuats() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -2516,7 +2516,7 @@ void TestTransformJoints( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->TransformJoints() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -2578,7 +2578,7 @@ void TestUntransformJoints( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->UntransformJoints() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -2656,7 +2656,7 @@ void TestTransformVertsNew( void ) {
 			break;
 		}
 	}
-	result = ( i >= NUMVERTS && bounds1.Compare( bounds2, 1e-4f ) ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= NUMVERTS && bounds1.Compare( bounds2, 1e-4f ) ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->TransformVertsNew() %s", result ), NUMVERTS, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -2687,7 +2687,7 @@ void TestTransformVertsNew( void ) {
 			break;
 		}
 	}
-	result = ( i >= NUMVERTS && bounds1.Compare( bounds2, 1e-4f ) ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= NUMVERTS && bounds1.Compare( bounds2, 1e-4f ) ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->TransformVertsAndTangents() %s", result ), NUMVERTS, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -2718,7 +2718,7 @@ void TestTransformVertsNew( void ) {
 			break;
 		}
 	}
-	result = ( i >= NUMVERTS && bounds1.Compare( bounds2, 1e-4f ) ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= NUMVERTS && bounds1.Compare( bounds2, 1e-4f ) ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->TransformVertsAndTangentsFast() %s", result ), NUMVERTS, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -2776,7 +2776,7 @@ void TestTracePointCull( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT && totalOr1 == totalOr2 ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT && totalOr1 == totalOr2 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->TracePointCull() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -2837,7 +2837,7 @@ void TestDecalPointCull( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->DecalPointCull() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -2895,7 +2895,7 @@ void TestOverlayPointCull( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->OverlayPointCull() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -2954,7 +2954,7 @@ void TestDeriveTriPlanes( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->DeriveTriPlanes() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -3036,7 +3036,7 @@ void TestDeriveTangents( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->DeriveTangents() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -3113,7 +3113,7 @@ void TestDeriveUnsmoothedTangents( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->DeriveUnsmoothedTangents() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -3174,7 +3174,7 @@ void TestNormalizeTangents( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->NormalizeTangents() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -3238,7 +3238,7 @@ void TestGetTextureSpaceLightVectors( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->CreateTextureSpaceLightVectors() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -3305,7 +3305,7 @@ void TestGetSpecularTextureCoords( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->CreateSpecularTextureCoords() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -3376,7 +3376,7 @@ void TestCreateShadowCache( void ) {
 		}
 	}
 
-	result = ( i >= COUNT && numVerts1 == numVerts2 ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT && numVerts1 == numVerts2 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->CreateShadowCache() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -3404,7 +3404,7 @@ void TestCreateShadowCache( void ) {
 			break;
 		}
 	}
-	result = ( i >= COUNT ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= COUNT ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->CreateVertexProgramShadowCache() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 
@@ -3442,7 +3442,7 @@ void TestShadowVolumes( void ) {
 		GetBest( start, end, bestClocksSIMD );
 	}
 
-	result = ( numFacing1 == numFacing2 ) ? "ok" : S_COLOR_RED"X";
+	result = ( numFacing1 == numFacing2 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->ShadowVolume_CountFacing() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -3462,7 +3462,7 @@ void TestShadowVolumes( void ) {
 		GetBest( start, end, bestClocksSIMD );
 	}
 
-	result = ( numFacing1 == numFacing2 ) ? "ok" : S_COLOR_RED"X";
+	result = ( numFacing1 == numFacing2 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->ShadowVolume_CountFacingCull() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -3488,7 +3488,7 @@ void TestShadowVolumes( void ) {
 		}
 	}
 
-	result = ( i >= numFacing1 && numFacing1 == numFacing2 ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= numFacing1 && numFacing1 == numFacing2 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->ShadowVolume_CreateSilTriangles() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -3514,7 +3514,7 @@ void TestShadowVolumes( void ) {
 		}
 	}
 
-	result = ( i >= numFacing1 && numFacing1 == numFacing2 ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= numFacing1 && numFacing1 == numFacing2 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->ShadowVolume_CreateCapTriangles() %s", result ), COUNT, bestClocksSIMD, bestClocksGeneric );
 }
 #endif
@@ -3574,7 +3574,7 @@ void TestSoundUpSampling( void ) {
 					break;
 				}
 			}
-			result = ( i >= MIXBUFFER_SAMPLES*numSpeakers ) ? "ok" : S_COLOR_RED"X";
+			result = ( i >= MIXBUFFER_SAMPLES*numSpeakers ) ? "ok" :  S_COLOR_RED "X";
 			PrintClocks( va( "   simd->UpSamplePCMTo44kHz( %d, %d ) %s", kHz, numSpeakers, result ), MIXBUFFER_SAMPLES*numSpeakers*kHz/44100, bestClocksSIMD, bestClocksGeneric );
 		}
 	}
@@ -3604,7 +3604,7 @@ void TestSoundUpSampling( void ) {
 					break;
 				}
 			}
-			result = ( i >= MIXBUFFER_SAMPLES ) ? "ok" : S_COLOR_RED"X";
+			result = ( i >= MIXBUFFER_SAMPLES ) ? "ok" :  S_COLOR_RED "X";
 			PrintClocks( va( "   simd->UpSampleOGGTo44kHz( %d, %d ) %s", kHz, numSpeakers, result ), MIXBUFFER_SAMPLES*numSpeakers*kHz/44100, bestClocksSIMD, bestClocksGeneric );
 		}
 	}
@@ -3671,7 +3671,7 @@ void TestSoundMixing( void ) {
 			break;
 		}
 	}
-	result = ( i >= MIXBUFFER_SAMPLES*6 ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= MIXBUFFER_SAMPLES*6 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->MixSoundTwoSpeakerMono() %s", result ), MIXBUFFER_SAMPLES, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -3703,7 +3703,7 @@ void TestSoundMixing( void ) {
 			break;
 		}
 	}
-	result = ( i >= MIXBUFFER_SAMPLES*6 ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= MIXBUFFER_SAMPLES*6 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->MixSoundTwoSpeakerStereo() %s", result ), MIXBUFFER_SAMPLES, bestClocksSIMD, bestClocksGeneric );
 
 
@@ -3736,7 +3736,7 @@ void TestSoundMixing( void ) {
 			break;
 		}
 	}
-	result = ( i >= MIXBUFFER_SAMPLES*6 ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= MIXBUFFER_SAMPLES*6 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->MixSoundSixSpeakerMono() %s", result ), MIXBUFFER_SAMPLES, bestClocksSIMD, bestClocksGeneric );
 
 	bestClocksGeneric = 0;
@@ -3768,7 +3768,7 @@ void TestSoundMixing( void ) {
 			break;
 		}
 	}
-	result = ( i >= MIXBUFFER_SAMPLES*6 ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= MIXBUFFER_SAMPLES*6 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->MixSoundSixSpeakerStereo() %s", result ), MIXBUFFER_SAMPLES, bestClocksSIMD, bestClocksGeneric );
 
 
@@ -3804,7 +3804,7 @@ void TestSoundMixing( void ) {
 			break;
 		}
 	}
-	result = ( i >= MIXBUFFER_SAMPLES*6 ) ? "ok" : S_COLOR_RED"X";
+	result = ( i >= MIXBUFFER_SAMPLES*6 ) ? "ok" :  S_COLOR_RED "X";
 	PrintClocks( va( "   simd->MixedSoundToSamples() %s", result ), MIXBUFFER_SAMPLES, bestClocksSIMD, bestClocksGeneric );
 }
 
