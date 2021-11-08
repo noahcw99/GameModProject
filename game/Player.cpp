@@ -117,6 +117,7 @@ const idEventDef EV_Player_DisableObjectives( "disableObjectives" );
 // mekberg: don't suppress showing of new objectives anymore
 const idEventDef EV_Player_AllowNewObjectives( "<allownewobjectives>" );
 
+
 // RAVEN END
 
 CLASS_DECLARATION( idActor, idPlayer )
