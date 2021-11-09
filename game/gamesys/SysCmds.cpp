@@ -2405,6 +2405,15 @@ static void Cmd_UnbindRagdoll_f( const idCmdArgs &args ) {
 
 /*
 ==================
+Cmd_Giveallwep_f
+==================
+*/
+static void Cmd_Giveallwep_f(const idCmdArgs& args) {
+	gameLocal.Printf("]give all\n");
+}
+
+/*
+==================
 Cmd_GameError_f
 ==================
 */
@@ -3133,7 +3142,7 @@ void idGameLocal::InitConsoleCommands( void ) {
 	cmdSystem->AddCommand( "saveParticles",			Cmd_SaveParticles_f,		CMD_FL_GAME|CMD_FL_CHEAT,	"saves all lights to the .map file" );
 	cmdSystem->AddCommand( "clearLights",			Cmd_ClearLights_f,			CMD_FL_GAME|CMD_FL_CHEAT,	"clears all lights" );
 	cmdSystem->AddCommand( "gameError",				Cmd_GameError_f,			CMD_FL_GAME|CMD_FL_CHEAT,	"causes a game error" );
-
+	cmdSystem->AddCommand("giveallwep", Cmd_Giveallwep_f, CMD_FL_GAME | CMD_FL_CHEAT, "gives all wep");
 // RAVEN BEGIN
 // rjohnson: entity usage stats
 	cmdSystem->AddCommand( "listEntityStats",		Cmd_ListEntityStats_f,		CMD_FL_GAME|CMD_FL_CHEAT,	"lists global entity stats" );

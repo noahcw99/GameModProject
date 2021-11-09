@@ -117,6 +117,7 @@ const idEventDef EV_Player_DisableObjectives( "disableObjectives" );
 // mekberg: don't suppress showing of new objectives anymore
 const idEventDef EV_Player_AllowNewObjectives( "<allownewobjectives>" );
 
+int playerMana = 5;
 
 // RAVEN END
 
@@ -169,6 +170,7 @@ CLASS_DECLARATION( idActor, idPlayer )
 	EVENT( EV_Player_DamageEffect,			idPlayer::Event_DamageEffect )
 END_CLASS
 
+// RAVEN BEGIN
 // RAVEN BEGIN
 // asalmon: Xenon weapon combo system
 #ifdef _XENON
@@ -3392,6 +3394,11 @@ void idPlayer::UpdateHudStats( idUserInterface *_hud ) {
 	int temp;
 	
 	assert ( _hud );
+	temp = _hud->State().GetInt("player_mana", "-1");
+	if (temp != playerMana) {
+		_hud->SetStateInt("player_mana", playerMana);
+		_hud->HandleNamedEvent("updateMana");
+	}
 
 	temp = _hud->State().GetInt ( "player_health", "-1" );
 	if ( temp != health ) {		
@@ -10247,6 +10254,7 @@ void idPlayer::Damage( idEntity *inflictor, idEntity *attacker, const idVec3 &di
 
 	// do the damage
 	if ( damage > 0 ) {
+		playerMana++;
 		if ( !gameLocal.isMultiplayer ) {
 			if ( g_useDynamicProtection.GetBool() && g_skill.GetInteger() < 2 ) {
 				if ( gameLocal.time > lastDmgTime + 500 && dynamicProtectionScale > 0.25f ) {
